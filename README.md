@@ -2,8 +2,7 @@
 a handy monkey shell for android apk, works well **without root permission**   
 
 
-  firstly, modify the package name in the monkey_random.sh(with random seed) and monkey.sh(with fixed seed) for your apk,   
-currently it’s com.zhiliaoapp.musically.  
+  firstly, modify the package name in the **monkey_random.sh**(with random seed) and **monkey.sh**(with fixed seed) for your apk, currently it’s com.zhiliaoapp.musically.  
 
   secondly, execute following commands to copy the shells to phone’s sdcard:  
     1. adb push shells’directory sdcard/  
