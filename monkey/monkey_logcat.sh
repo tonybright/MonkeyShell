@@ -1,2 +1,3 @@
 #!/bin/bash
-logcat -v time > /sdcard/monkey/monkey_logcat.log
+logcat -v time > monkey_logcat.log
+

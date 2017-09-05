@@ -2,16 +2,17 @@
 a handy monkey shell for android apk, works well **without root permission**   
 
 
-  firstly, modify the package name in the **monkey_random.sh**(with random seed) and **monkey.sh**(with fixed seed) for your apk, currently it’s com.zhiliaoapp.musically.  
+  firstly, modify the package name in the **monkey_random.sh**(with random seed) for your apk, currently it’s com.zhiliaoapp.musically.  
 
   secondly, execute following commands to copy the shells to phone’s sdcard:  
-    1. adb push shells’directory sdcard/  
+    1. adb push monkey-entire-directory /data/local/tmp  
     2. adb shell  
-    3. sh sdcard/start_monkey.sh  
+    3. cd /data/local/tmp/monkey  
+    3. sh sh start_monkey.sh  
 
   finally, execute following commands to capture monkey-logs:  
-    1. adb pull sdcard/monkey.log ~/Desktop  
-    2. adb push sdcard/monkey_logcat.log  ~/Desktop  
+    1. adb pull /data/local/tmp/monkey/monkey.log ~/Desktop  
+    2. adb pull /data/local/tmp/monkey/monkey_logcat.log  ~/Desktop  
  
   Some Notes:  
     the monkey.log contains the crash and anr traces information, 
